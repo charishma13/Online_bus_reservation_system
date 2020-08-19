@@ -1,0 +1,181 @@
+body
+{
+    background-color:#f4f4f4;
+    color:#555;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    line-height:1.6em;
+    margin:0;
+}
+.main  h1
+{
+    color: #E91E63;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 200;
+    text-align:center;
+    text-transform: uppercase;
+}
+.button
+{
+    background-color:#E91E63;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+
+}
+.button:hover
+{
+    background-color:red;
+    color:white;
+}
+a
+{
+    text-decoration:none;
+    color:#E91E63;
+    font-size:18px;
+    padding-right:15px;
+}
+a:hover
+{
+    color:red;
+}
+a:active
+{
+    color:green;
+}
+
+
+
+.container1
+{
+    margin:auto;
+    margin-top:10px;
+    width:50%;
+}
+.container1 h3
+{
+    color: #E91E63;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+    text-align:center;
+}
+.container1 h4
+{
+    color: #E91E63;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+}
+
+
+
+    
+    
+
+    .clr
+    {
+        clear:both;
+    }
+
+    
+
+#nav-bar
+{
+    background-color:#E91E63;
+    col:#19bc9c
+}
+
+#nav-bar ul
+{
+    padding:10px;
+    list-style:none;
+}
+
+#nav-bar li
+{
+  display:inline;
+  list-style-type:
+  padding-right:2px;
+}
+
+.form 
+{
+    background-color:white;
+    border:2px #E91E63 solid;
+    padding:20px;
+    text-align:center;
+}
+.form h1
+{
+    color: #E91E63;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 200;
+    text-align:center;
+}
+
+
+    .my-form .form-group
+    {
+        padding-bottom:15px;
+        padding-top:15px;
+    }
+
+
+
+.my-form input[type="text"],input[type="password"]
+
+{
+    padding:10px;
+    width:40%;
+}
+.my-form input[type="date"]
+
+{
+    padding-right:0px;
+    width:25%;
+}
+.my-form input[type="number"]
+
+{
+    padding-top:5px;
+    width:8%;
+}
+.categories
+    {
+        border:2px #E91E63 solid ; 
+        padding:10px;
+    }
+
+    .categories h2
+    {
+        text-align:center;
+        color:#E91E63;
+    }
+    .categories ul
+    {
+        padding:0;
+        padding-left:20px;
+        list-style:none;
+        font-size:12px;
+    }
+
+    .categories li
+    {
+        padding-bottom:5px;
+        color:black;
+        list-style:none;
+        display:inline;
+        padding-right:30px;
+
+    }
+
+
+
+

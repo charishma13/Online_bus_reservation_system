@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<script type="text/javascript" src="loginvalidate.js">
+	</script>
+</head>
+<body>
+	<div class="background1">
+	<div class="container1">
+		<div class="form">
+<h1 >LOGIN HERE</h1>
+<form class="my-form" name="form" onsubmit="return validate()" action="logout.html" method="POST">
+<div class="form-group">
+<label>Username</label>
+&nbsp;
+<input type="text" name="user_name" placeholder="enter username"><br>
+<label id="invalid username" style="color:red;visibility:hidden">invalid</label>
+</div>
+<div class="form-group">
+<label>Password</label>
+&nbsp;
+<input type="password" name="pwd" placeholder="enter password"><br>
+<label id="passwordinvalid" style="color:red;visibility:hidden"><small>password must be atleast 6 characters in length</small></label>
+
+</div>
+<br>
+<input type="submit" class="button" value="login">
+</form>
+
+<br />
+new user?
+<a href="register.html">register</a>
+</div>
+</div>
+</div>
+</body>
+</html>

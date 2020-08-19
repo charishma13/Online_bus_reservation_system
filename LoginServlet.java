@@ -1,0 +1,87 @@
+ import javax.servlet.*;
+ import javax.servlet.http.*;
+ import java.io.*;
+ import java.sql.*;
+
+ public class LoginServlet extends HttpServlet
+ {
+	PrintWriter out;
+	Connection con;
+	Statement st;
+	public void doPost(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException
+	 {
+		response.setContentType("text/html");
+		out=response.getWriter();
+		String user_name=request.getParameter("user_name");
+		String pwd=request.getParameter("pwd");
+		String name="";
+	
+		try{
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522:orcl","scott","tiger");
+		st=con.createStatement();
+		ResultSet rs=st.executeQuery("select * from register");
+
+		int flag=0;
+															         
+		while(rs.next())
+		 {
+			if(user_name.equalsIgnoreCase(rs.getString("USERNAME")) && pwd.equals(rs.getString("PASSWORD")))
+			 {
+				flag=1;
+				name=rs.getString("FIRSTNAME")+" "+rs.getString("LASTNAME");
+				break;
+			 }
+		 }
+		 
+		 if(flag==1)
+		 {
+		   out.println("<h2 align=center>HI "+name+"</h2>");
+		   HttpSession session=request.getSession();
+		   session.setAttribute("username",user_name);
+		   RequestDispatcher rd=request.getRequestDispatcher("/home2.html");
+		   rd.include(request,response);
+		 }
+		 else
+		 {
+			 out.println("<h2 align=center>invalid username|password</h2>");
+			  RequestDispatcher rd=request.getRequestDispatcher("/login.html");
+		   rd.include(request,response);
+		 }	
+		}
+		catch(SQLException|ClassNotFoundException e)
+		{
+		 out.println(e);
+		}
+		finally
+		  {
+			try
+			{
+				if(st!=null)
+				{
+					st.close();
+				}
+			}
+			catch (SQLException e)
+			{
+				out.println(e);
+			}
+			try
+			{
+				if(con!=null)
+				{
+					con.close();
+				}
+			}
+			catch (SQLException e)
+			{
+				out.println(e);
+			}												   
+			finally
+			  {
+				out.close();
+			  }
+		  }
+
+	 }
+ }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<img src="red-bus.svg" width="140" height="130" alt="go bus" style="float:left">
+	<div class="container">
+<div class="box-1">
+	<h1>WELCOME TO GOBUS</h1>
+</div>
+</div>
+
+</div><nav id="nav-bar">
+		<div class="container">
+		<ul>
+			<li><a href="home2.html">home</a> </li>
+			<li><a href="#">about</a> </li>
+			<li><a href="#">services</a> </li>
+			<li><a href="#">contact</a> </li>
+			<li><a href="profile.html">my profile</a>
+			<li><a href="home1.html">log out</a>
+
+
+		</ul>
+	</div>
+	</nav>
+	<div class="background">
+<div class="container1">
+	<div class="form">
+		<h1>Search for bus tickets!</h1>
+	<form class="my-form">
+		<div class="form-group">
+		
+		<input type="text" name="fromplace" placeholder="FROM">
+	</div>
+	<div class="form-group">
+		
+		<input type="text" name="toplace" placeholder="TO">
+	</div>
+	<div class="date">
+
+		<input type="date" name="fromplace" placeholder="DEPART ON">
+	
+     		<input type="date" name="fromplace" placeholder="RETURN ON">
+
+
+            </div>
+
+            <br>
+        </form>
+     		<a href="catalog.html"><button class="button">Check Availability</button></a>
+
+		
+
+</div>
+</div>
+</div>
+
+<div class="container1">
+	<div class="categories">
+		<h2>Popular Routes</h2>
+		<ul>
+			<li><a href="">hyderabad-banglore</a></li>
+			<li><a href="">hyderabad-chennai</a></li>
+			<li><a href="">hyderabad-pune</a></li>
+			<li><a href="">hyderabad-tirupathi</a></li>
+			<li><a href="">banglore-hyderabad</a></li>
+			<li><a href="">chennai-hyderabad</a></li>
+			<li><a href="">pune-hyderabad</a></li>
+			<li><a href="">tirupathi-hyderabad</a></li>
+			
+
+		</ul>
+	</div>	
+	</div>
+	<footer id="main-footer">
+	<p>copyright &copy; 2019 GoBus,All rights reserved </p>
+	</footer>
+	</body>
+
+</html>
